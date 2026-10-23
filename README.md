@@ -14,6 +14,7 @@
 - [30 秒看懂：国内用 Claude Code 的三条路](#30-秒看懂国内用-claude-code-的三条路)
 - [第 1 步：安装 Claude Code 和 Codex](#第-1-步安装-claude-code-和-codex)
 - [第 2 步：选择 API 来源](#第-2-步选择-api-来源)
+  - [接口在线状态（每日自动检测）](#接口在线状态每日自动检测)
 - [第 3 步：配置 Claude Code（settings.json）](#第-3-步配置-claude-codesettingsjson)
 - [第 4 步：配置 Codex（config.toml）](#第-4-步配置-codexconfigtoml)
 - [第 5 步：一行命令检测是否接通](#第-5-步一行命令检测是否接通)
@@ -80,6 +81,11 @@ codex --version
 | Orbis（聚合平台） | `https://api.orbiorbi.com` | 以控制台的接入页为准，例如 `claude-haiku-5-5` | [接入第三方 API 通用教程](docs/claude-code-third-party-api.md) |
 
 > 模型名后面的 `[1m]` 是 Claude Code 的写法，表示启用 100 万 token 上下文。服务商不支持时去掉即可。
+
+### 接口在线状态（每日自动检测）
+
+<!-- BEGIN:status -->
+<!-- END:status -->
 
 想先知道**哪个模型写代码最强**再选？可以看每天更新的 [AI 编程模型排行榜](https://orbiorbi.com/leaderboards/code/?utm_source=github&utm_medium=readme&utm_campaign=claude-code-china-guide&utm_content=choose-model)（数据来自 Arena 等公开评测，标注了来源）。
 

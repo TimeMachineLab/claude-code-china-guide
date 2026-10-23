@@ -1,0 +1,28 @@
+name: 接口在线状态检测
+
+on:
+  schedule:
+    - cron: "43 0 * * *"   # 每天 08:43（北京时间）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 检测接口状态
+        run: python scripts/status.py
+      - name: 状态有变化就提交
+        run: |
+          git add -A data README.md
+          if git diff --cached --quiet; then echo "没有变化"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: 接口状态变化 $(TZ=Asia/Shanghai date +'%F %H:%M')"
+          git push
