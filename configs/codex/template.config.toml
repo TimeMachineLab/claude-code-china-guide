@@ -1,0 +1,12 @@
+# 通用模板：把 myprovider 换成你起的名字，保存为 ~/.codex/myprovider.config.toml
+# 启动：先设置 MY_PROVIDER_API_KEY 环境变量，再运行 codex --profile myprovider
+# 前提：服务商支持 OpenAI Responses API（只支持 Chat Completions 的不行）
+model = "服务商的模型ID"
+model_provider = "myprovider"
+web_search = "disabled"
+
+[model_providers.myprovider]
+name = "My Provider"
+base_url = "https://服务商地址/v1"
+wire_api = "responses"
+env_key = "MY_PROVIDER_API_KEY"

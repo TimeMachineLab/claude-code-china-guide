@@ -1,0 +1,15 @@
+name: 信息过时 / Outdated info
+description: 某个地址、模型 ID 或步骤已经变了
+labels: ["outdated"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: 哪一页
+      placeholder: 例如 docs/kimi-k3-claude-code.md
+    validations: { required: true }
+  - type: textarea
+    id: detail
+    attributes:
+      label: 现在的正确说法，附官方链接
+    validations: { required: true }

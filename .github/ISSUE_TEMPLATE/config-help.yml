@@ -1,0 +1,30 @@
+name: 配置求助 / Setup help
+description: Claude Code、Codex、CC Switch、WorkBuddy 接入第三方 API 时遇到问题
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: "⚠️ 不要贴任何 API Key。先跑一次 `scripts/check-api.sh`，把输出一起贴上来能更快定位问题。"
+  - type: dropdown
+    id: tool
+    attributes:
+      label: 工具
+      options: [Claude Code, Codex, CC Switch, WorkBuddy, 其他]
+    validations: { required: true }
+  - type: input
+    id: provider
+    attributes:
+      label: 服务商和接口地址
+      placeholder: 例如 DeepSeek / https://api.deepseek.com/anthropic
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes:
+      label: 工具版本
+      placeholder: claude --version 或 codex --version 的输出
+  - type: textarea
+    id: detail
+    attributes:
+      label: 报错和 /status 输出
+      description: 完整报错信息、/status 输出、check-api 脚本输出（删掉 Key）
+    validations: { required: true }

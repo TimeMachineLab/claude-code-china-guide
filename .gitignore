@@ -1,0 +1,9 @@
+# 防止误提交带 Key 的本地配置
+*.local.json
+*.local.toml
+.env
+.env.*
+settings.local.json
+# 系统文件
+.DS_Store
+Thumbs.db

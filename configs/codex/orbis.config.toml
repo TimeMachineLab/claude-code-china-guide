@@ -1,0 +1,12 @@
+# 保存为 ~/.codex/orbis.config.toml（Windows：%USERPROFILE%\.codex\orbis.config.toml）
+# 需要 Codex 0.134.0+；启动：先设置 ORBIS_API_KEY 环境变量，再运行 codex --profile orbis
+# 模型 ID 以 Orbis 控制台的接入页为准；Key 必须属于支持 OpenAI Responses 的线路
+model = "gpt-6.1-sol"
+model_provider = "orbis"
+web_search = "disabled"
+
+[model_providers.orbis]
+name = "Orbis"
+base_url = "https://api.orbiorbi.com/v1"   # 保留 /v1，不要加 /responses
+wire_api = "responses"
+env_key = "ORBIS_API_KEY"                  # 环境变量的名字，不是 Key 本身

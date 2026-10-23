@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Orbis 接入文档
+    url: https://orbiorbi.com/docs/?utm_source=github&utm_medium=issue-template&utm_campaign=claude-code-china-guide
+    about: 使用 Orbis 遇到问题，可以先查官方文档
