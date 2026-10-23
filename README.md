@@ -85,6 +85,14 @@ codex --version
 ### 接口在线状态（每日自动检测）
 
 <!-- BEGIN:status -->
+| 服务商 | Claude Code 接入地址 | 状态 | 状态变化时间（北京时间） |
+|---|---|:---:|---|
+| DeepSeek 官方 | `https://api.deepseek.com/anthropic` | ✅ 在线 | 2026-10-23 23:16 |
+| Kimi 官方 | `https://api.moonshot.cn/anthropic` | ✅ 在线 | 2026-10-23 23:16 |
+| 智谱 GLM 官方 | `https://open.bigmodel.cn/api/anthropic` | ✅ 在线 | 2026-10-23 23:16 |
+| Orbis | `https://api.orbiorbi.com` | ✅ 在线 | 2026-10-23 23:16 |
+
+> 每天由 GitHub Actions 自动检测一次（不带 Key 发一个最小请求，收到「未授权」即说明服务在线）。检测服务器在海外，**只代表服务本身在线，不代表国内网络能直连**。运行记录见 [Actions](../../actions/workflows/status.yml)。
 <!-- END:status -->
 
 想先知道**哪个模型写代码最强**再选？可以看每天更新的 [AI 编程模型排行榜](https://orbiorbi.com/leaderboards/code/?utm_source=github&utm_medium=readme&utm_campaign=claude-code-china-guide&utm_content=choose-model)（数据来自 Arena 等公开评测，标注了来源）。
