@@ -15,8 +15,8 @@
   "detail": "HTTP 401"
  },
  "Orbis": {
-  "state": "up",
-  "since": "2026-10-28 14:14",
-  "detail": "HTTP 401"
+  "state": "down",
+  "since": "2026-11-24 18:23",
+  "detail": "HTTP 503"
  }
 }
